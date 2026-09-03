@@ -1,9 +1,11 @@
+import { FileText } from "lucide-react";
+
 export default function AboutPreview() {
   return (
     <section className="relative w-full min-h-screen bg-[#f7f6f2] text-slate-900 font-serif px-6 sm:px-12 lg:px-24 py-20 flex flex-col justify-between items-center text-center">
-      {/* Expanded Centered Bio Statement */}
-      <div className="max-w-6xl mx-auto mt-6">
-        <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed font-sans font-light max-w-6xl mx-auto">
+      {/* Centered Bio Statement */}
+      <div className="w-full max-w-7xl mx-auto mt-6">
+        <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed font-sans font-light">
           Hello there! Welcome to my little space on the web, where I showcase my works, 
           experiments, and web development projects. Right now, I am exploring interactive 
           animations and smooth transition effects to build more immersive, memorable digital experiences.
@@ -36,8 +38,7 @@ export default function AboutPreview() {
       </div>
 
       {/* Profile Photo / Polaroid Card */}
-      <div className="relative group max-w-sm sm:max-w-md w-full bg-white p-3 sm:p-4 rounded-sm shadow-xl hover:shadow-2xl transition-shadow duration-300 mx-auto">
-        {/* Top Pin Accent */}
+      <div className="relative group max-w-sm sm:max-w-md w-full bg-white p-3 sm:p-4 rounded-sm shadow-xl hover:shadow-2xl transition-shadow duration-300 mx-auto mb-10">
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 bg-slate-800 rounded-full border-2 border-white shadow-md z-10" />
 
         <div className="relative overflow-hidden rounded-sm aspect-[4/5] bg-slate-200">
@@ -48,6 +49,16 @@ export default function AboutPreview() {
           />
         </div>
       </div>
+
+      {/* Download CV Button */}
+      <a
+        href="/resume.pdf"
+        download
+        className="inline-flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white font-sans text-sm font-medium px-6 py-3 rounded-md shadow-lg hover:shadow-xl transition-all cursor-pointer group"
+      >
+        <span>Download CV</span>
+        <FileText className="w-4 h-4 text-slate-300 group-hover:scale-110 transition-transform" />
+      </a>
     </section>
   );
 }
