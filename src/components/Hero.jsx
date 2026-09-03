@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Navbar from "./Navbar";
 
 export default function Hero() {
   const canvasRef = useRef(null);
@@ -70,9 +69,6 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none"
       />
 
-      {/* Top Overlay Navigation */}
-      <Navbar />
-
       {/* Main Hero Content - Responsive scaling across mobile, tablet, desktop */}
       <div className="relative z-10 w-full h-full px-6 sm:px-12 lg:px-20 flex flex-col justify-between pt-32 sm:pt-40 pb-16 text-slate-100">
         {/* Top-Left Heading */}
@@ -81,14 +77,14 @@ export default function Hero() {
             Hi, I'm
           </h2>
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-semibold tracking-tight text-white drop-shadow-lg leading-tight">
-            Juan Pablo Jiménez!
+            Khadka Ashish!
           </h1>
         </div>
 
         {/* Bottom-Right Role Title */}
         <div className="self-end mb-4 sm:mb-8">
           <h2 className="text-3xl sm:text-6xl lg:text-7xl font-normal text-slate-200 tracking-wide drop-shadow-xl text-right">
-            Software Engineer
+            Front-End Developer
           </h2>
         </div>
       </div>

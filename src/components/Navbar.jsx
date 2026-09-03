@@ -22,15 +22,15 @@ export default function Navbar() {
           to="/"
           className="text-2xl sm:text-3xl font-bold tracking-tighter hover:opacity-80 transition-opacity"
         >
-          JP
+          ASHISH
         </Link>
 
         {/* Right: Language Toggle & Menu Trigger */}
         <div className="flex items-center gap-6 sm:gap-8 text-sm sm:text-base font-sans tracking-wide">
-          <button className="flex items-center gap-1.5 hover:text-slate-300 transition-colors cursor-pointer">
+          {/* <button className="flex items-center gap-1.5 hover:text-slate-300 transition-colors cursor-pointer">
             <span className="font-mono text-xs sm:text-sm">EN</span>
             <Globe className="w-4 h-4 opacity-80" />
-          </button>
+          </button> */}
 
           <button
             onClick={() => setIsMenuOpen(true)}
@@ -39,7 +39,7 @@ export default function Navbar() {
             <span className="text-xs sm:text-sm uppercase tracking-widest font-mono">Menu</span>
             <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
-        </div>
+        </div> 
       </header>
 
       {/* Fullscreen Responsive Overlay Menu */}
@@ -51,7 +51,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
               className="text-2xl sm:text-3xl font-bold tracking-tighter"
             >
-              JP
+              ASHISH
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}
