@@ -54,7 +54,7 @@ export default function AboutPreview() {
       <a
         href="/resume.pdf"
         download
-        className="inline-flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white font-sans text-sm font-medium px-6 py-3 rounded-md shadow-lg hover:shadow-xl transition-all cursor-pointer group"
+        className="inline-flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white font-sans text-[24px] font-medium px-6 py-3 rounded-md shadow-lg hover:shadow-xl transition-all cursor-pointer group"
       >
         <span>Download CV</span>
         <FileText className="w-4 h-4 text-slate-300 group-hover:scale-110 transition-transform" />

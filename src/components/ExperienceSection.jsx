@@ -1,21 +1,46 @@
+import { useEffect, useState } from "react";
+
 export default function ExperienceSection() {
+  const fullCompanyName = "VS Nepal";
+  const [displayedName, setDisplayedName] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index <= fullCompanyName.length) {
+        setDisplayedName(fullCompanyName.slice(0, index));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 90); // Speed of each letter appearing in milliseconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative w-full bg-[#111319] text-slate-100 font-sans px-6 sm:px-12 lg:px-24 py-24 flex flex-col justify-center items-center text-center border-t border-slate-800/50">
       
-      {/* Playful Sticker Badge */}
-      <div className="mb-12 flex flex-col items-center">
-        <span className="font-serif italic text-2xl sm:text-3xl text-slate-400 font-light mb-2 -rotate-3 select-none">
-          Currently working
+      {/* Playful Animated Badge */}
+      <div className="mb-14 flex flex-col items-center">
+        {/* Larger "Currently working" Header */}
+        <span className="font-serif italic text-3xl sm:text-4xl lg:text-5xl text-slate-300 font-light mb-4 -rotate-2 select-none">
+          Currently
         </span>
 
-        <div className="rotate-2 inline-flex items-center gap-2.5 bg-slate-100 hover:rotate-0 text-slate-950 px-5 py-2 rounded-full font-sans text-sm sm:text-base font-bold shadow-lg shadow-black/40 transition-transform duration-300 cursor-default">
-          <span className="text-slate-500 font-serif italic text-base">@</span>
-          <span className="tracking-tight">VS Nepal Pvt. Ltd.</span>
+        {/* Larger Badge with Typing Letter Effect */}
+        <div className="rotate-2 inline-flex items-center gap-3 bg-slate-100 text-slate-950 px-7 py-3 rounded-full font-sans text-lg sm:text-xl lg:text-2xl font-bold shadow-xl shadow-black/50 transition-transform duration-300 hover:rotate-0 cursor-default">
+          <span className="text-slate-500 font-serif italic text-xl sm:text-2xl">@</span>
+          <span className="tracking-tight min-h-[1.75rem] inline-block">
+            {displayedName}
+            {/* Blinking Cursor */}
+            <span className="animate-pulse text-slate-400 font-normal ml-0.5">|</span>
+          </span>
         </div>
       </div>
 
       {/* Experience Description Paragraphs */}
-      <div className="max-w-5xl mx-auto space-y-6 text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed font-light">
+      <div className="max-w-6xl mx-auto space-y-6 text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed font-light">
         <p>
           I have been working as a Software Engineer with expertise in React, Next.js, and TypeScript, 
           contributing to large-scale web applications with a strong focus on microfrontend architecture.
