@@ -49,7 +49,7 @@ export default function AboutQuote() {
   return (
     <section className="relative w-full bg-[#111319] text-slate-100 font-sans px-6 sm:px-12 lg:px-20 py-28 flex flex-col items-center justify-center border-t border-slate-800/50 overflow-hidden">
       
-      <div className="w-full max-w-7xl mx-auto relative min-h-[500px] flex flex-col justify-between">
+      <div className="w-full max-w-9xl mx-auto relative min-h-[500px] flex flex-col justify-between">
         
         {/* Floating "About me" Balloon Button (Centered) */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce duration-[3000ms] z-20">
