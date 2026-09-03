@@ -1,6 +1,7 @@
+import Hero from "../components/Hero";
 import AboutPreview from "../components/AboutPreview";
 import ExperienceSection from "../components/ExperienceSection";
-import Hero from "../components/Hero";
+import AboutQuote from "../components/AboutQuote";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <AboutPreview />
       <ExperienceSection />
+      <AboutQuote />
     </div>
   );
 }
