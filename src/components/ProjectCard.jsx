@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 
 export default function ProjectCard({ project }) {
   return (
@@ -8,9 +9,9 @@ export default function ProjectCard({ project }) {
           <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
             {project.category}
           </span>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <a href={project.githubUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
-              <Github className="w-4 h-4" />
+              <FaGithub className="w-4 h-4" />
             </a>
             <a href={project.liveUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
               <ExternalLink className="w-4 h-4" />

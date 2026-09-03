@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { Mail } from "lucide-react";
 import { personalInfo } from "../data/portfolioData";
 
 export default function Footer() {
@@ -9,13 +10,13 @@ export default function Footer() {
         
         <div className="flex items-center gap-4">
           <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">
-            <Github className="w-5 h-5" />
+            <FaGithub className="w-5 h-5" />
           </a>
           <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">
-            <Linkedin className="w-5 h-5" />
+            <FaLinkedin className="w-5 h-5" />
           </a>
           <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">
-            <Twitter className="w-5 h-5" />
+            <FaXTwitter className="w-5 h-5" />
           </a>
           <a href={`mailto:${personalInfo.email}`} className="hover:text-cyan-400 transition-colors">
             <Mail className="w-5 h-5" />
