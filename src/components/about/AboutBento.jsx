@@ -111,7 +111,7 @@ export default function AboutBento({ username = "Ashishkhadka07" }) {
 
   return (
     <section className="w-full bg-[#111319] text-white px-6 sm:px-12 lg:px-20 py-20 border-t border-slate-800/80 font-sans">
-      <div className="w-full max-w-7xl mx-auto space-y-8">
+      <div className="w-full max-w-9xl mx-auto space-y-8">
         
         {/* Top Grid: Technical Core Stack Categorized */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

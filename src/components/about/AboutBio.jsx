@@ -55,7 +55,7 @@ export default function AboutBio() {
         </div>
 
         {/* Multi-Picture Showcase Section with Dynamic Hover Effects */}
-        <div className="mt-20 w-full max-w-6xl">
+        <div className="mt-20 w-full max-w-7xl">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-center">
             {galleryImages.map((img, index) => (
               <div

@@ -1,6 +1,7 @@
 import AboutBento from "../components/about/AboutBento";
 import AboutBio from "../components/about/AboutBio";
 import AboutHero from "../components/about/AboutHero";
+import AboutSkillsCTA from "../components/about/AboutPhilosophyCTA";
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
       <AboutHero />
       <AboutBio />
       <AboutBento />  
+      <AboutSkillsCTA />
     </main>
   );
 }
