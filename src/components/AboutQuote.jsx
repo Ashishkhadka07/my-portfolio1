@@ -67,9 +67,9 @@ export default function AboutQuote() {
           {/* Navigation Button */}
           <Link
             to="/about"
-            className="bg-white text-slate-900 font-serif italic text-2xl sm:text-3xl px-8 py-2.5 rounded-full shadow-2xl hover:scale-105 transition-transform border border-slate-200 font-medium"
+            className="bg-white text-slate-900 font-serif italic text-3xl sm:text-4xl px-8 py-2.5 rounded-full shadow-2xl hover:scale-105 transition-transform border border-slate-200 font-medium"
           >
-            About me
+            About Me
           </Link>
         </div>
 
