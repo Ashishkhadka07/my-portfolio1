@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
 
 export default function AboutPhilosophyCTA() {
-  const socialLinks = [
-    { name: "LinkedIn", url: "https://linkedin.com" },
-    { name: "GitHub", url: "https://github.com" },
-    { name: "Instagram", url: "https://instagram.com" },
-    { name: "Twitter", url: "https://twitter.com" },
-  ];
 
   return (
     <div className="w-full font-sans">
       {/* Upper Dark Section */}
       <section className="w-full bg-[#1e2022] text-white px-6 sm:px-12 lg:px-20 py-24 sm:py-32 flex flex-col items-center justify-center text-center">
-        <div className="max-w-5      xl mx-auto space-y-10">
+        <div className="max-w-5xl mx-auto space-y-10">
           
           {/* Section Title */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium tracking-wide">
