@@ -1,4 +1,5 @@
 import { FileText } from "lucide-react";
+import portraitImage from "../assets/ashish_portrait.jpg"; 
 
 export default function AboutPreview() {
   return (
@@ -43,7 +44,7 @@ export default function AboutPreview() {
 
         <div className="relative overflow-hidden rounded-sm aspect-[4/5] bg-slate-200">
           <img
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
+            src={portraitImage}
             alt="Profile Preview"
             className="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-500"
           />

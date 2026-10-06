@@ -1,11 +1,17 @@
 import { useState } from "react";
+import portraitImage from "../../assets/ashish_portrait.jpg"; 
+import img1 from "../../assets/ashish_portrait.jpg";
+import img2 from "../../assets/ashish_portrait.jpg";
+import img3 from "../../assets/ashish_portrait.jpg";
+import img4 from "../../assets/ashish_portrait.jpg";
+import img5 from "../../assets/ashish_portrait.jpg";
 
 const photos = [
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600",
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
 ];
 
 export default function AboutHero() {
@@ -72,7 +78,7 @@ export default function AboutHero() {
           {/* Center Portrait Box */}
           <div className="relative group w-72 h-96 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border-4 border-slate-700/60 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-slate-900 transition-transform duration-500 hover:scale-105 z-10">
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
+              src={portraitImage}
               alt="Ashish Khadka Portrait"
               className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-700"
             />
