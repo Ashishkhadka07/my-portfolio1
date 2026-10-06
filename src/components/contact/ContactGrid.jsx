@@ -4,27 +4,27 @@ export default function ContactGrid() {
   const contactCards = [
     {
       title: "Email",
-      value: "aasheeshkhadka@gmail.com",
+      value: "Ashish Khadka",
       subtext: "Let's get in touch",
       link: "mailto:aasheeshkhadka@gmail.com",
     },
     {
       title: "LinkedIn",
-      value: "https://www.linkedin.com/in/ashish-khadka-b31625212/",
+      value: "Ashish Khadka",
       subtext: "Professional network",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/ashish-khadka-b31625212/",
     },
     {
       title: "GitHub",
-      value: "https://github.com/Ashishkhadka07",
+      value: "Ashishkhadka07",
       subtext: "Check out my code",
-      link: "https://github.com",
+      link: "https://github.com/Ashishkhadka07/",
     },
     {
       title: "Instagram",
-      value: "https://www.instagram.com/ashish_khadka07/",
+      value: "ashish_khadka07",
       subtext: "Socialize with me",
-      link: "https://instagram.com",
+      link: "https://instagram.com/ashish_khadka07/",
     },
   ];
 

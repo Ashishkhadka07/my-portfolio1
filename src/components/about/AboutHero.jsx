@@ -60,14 +60,12 @@ export default function AboutHero() {
 
       {/* Main Content Layout aligned with Hero Grid */}
       <div className="w-full max-w-9xl mx-auto relative z-10 flex flex-col justify-between min-h-[75vh]">
-
         {/* Center Grid: DEVELOPER | Center Portrait | ENGINEER */}
         <div className="my-auto py-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-          
           {/* Left Title: DEVELOPER */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-black tracking-tight text-slate-100 uppercase underline decoration-slate-500 underline-offset-8">
-              DEVELOPER
+              FRONTEND
             </h1>
           </div>
 
@@ -75,7 +73,7 @@ export default function AboutHero() {
           <div className="relative group w-72 h-96 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border-4 border-slate-700/60 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-slate-900 transition-transform duration-500 hover:scale-105 z-10">
             <img
               src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
-              alt="Juan Pablo"
+              alt="Ashish Khadka Portrait"
               className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-700"
             />
           </div>
@@ -83,21 +81,18 @@ export default function AboutHero() {
           {/* Right Title: ENGINEER */}
           <div className="text-center lg:text-right">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-black tracking-tight text-slate-100 uppercase underline decoration-slate-500 underline-offset-8">
-              ENGINEER
+              DEVELOPER
             </h1>
           </div>
-
         </div>
 
         {/* Bottom Floating Visual Thumbnails */}
         <div className="flex justify-between items-end pt-8">
-
           {/* Floating Badge Graphic */}
           <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-slate-600 bg-slate-900 flex items-center justify-center shadow-xl animate-spin-slow">
             <span className="text-xs font-mono text-slate-300">✦ AK ✦</span>
           </div>
         </div>
-
       </div>
     </section>
   );
